@@ -4,7 +4,53 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be8b2df-0aae-4623-9b09-34c572f73708" name="Changes" comment="" />
+    <list default="true" id="9be8b2df-0aae-4623-9b09-34c572f73708" name="Changes" comment="First Commit">
+      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/empty_image_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/kasyus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/product.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/api/signup/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/cart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/categories/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/categories/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/AddressForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/AddressItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/EditAddressForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/EditPaymentMethodForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/PaymentMethodForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/PaymentMethodItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/profile/wishlist-items/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/seller/SellerPortal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/seller/add-product/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/seller/edit/[id]/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/seller/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AuthForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,27 +59,65 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2sZWxibVLC6mwDOWZjtYoLsDZGp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhtgn/Projects/mehmetgencv/kasyus-fe/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Debug&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mhtgn\\Projects\\mehmetgencv\\kasyus-fe\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\components" />
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\wishlist-items" />
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\payment-methods" />
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\addresses" />
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\public\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\public\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.Unnamed" />
+      <item itemvalue="npm.dev" />
+    </list>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -50,10 +134,59 @@
       <option name="presentableId" value="Default" />
       <updated>1738663827107</updated>
       <workItem from="1738663828583" duration="599000" />
+      <workItem from="1738664586974" duration="2346000" />
+      <workItem from="1739342250808" duration="6537000" />
+      <workItem from="1740914560350" duration="2007000" />
+      <workItem from="1740948461239" duration="1291000" />
+      <workItem from="1741127474355" duration="3825000" />
+      <workItem from="1741170170882" duration="8265000" />
+      <workItem from="1741369050123" duration="15222000" />
+      <workItem from="1741417515852" duration="10338000" />
+      <workItem from="1741510175327" duration="1206000" />
+      <workItem from="1741639884727" duration="1999000" />
+      <workItem from="1741677504626" duration="14352000" />
+      <workItem from="1741725406474" duration="5746000" />
+      <workItem from="1741759735952" duration="4346000" />
+      <workItem from="1741807271069" duration="4798000" />
+      <workItem from="1741861608633" duration="16838000" />
+      <workItem from="1741947332705" duration="2000" />
+      <workItem from="1742033647398" duration="2292000" />
+      <workItem from="1742056569165" duration="2479000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/next.config.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app/profile/payment-methods/page.tsx</url>
+          <line>102</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
