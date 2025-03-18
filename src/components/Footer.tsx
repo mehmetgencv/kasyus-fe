@@ -52,38 +52,39 @@ export default function Footer() {
                         <div>
                             <span>Güvenlik Sertifikası</span>
                             <div className="flex space-x-2 mt-2">
-                                {/*<img src="/tr-icon.png" alt="TR" className="w-6 h-6" />*/}
-                                {/*<img src="/ssl-icon.png" alt="SSL" className="w-6 h-6" />*/}
-                                {/*<img src="/pcv-icon.png" alt="PCV" className="w-6 h-6" />*/}
+                                {/* <img src="/tr-icon.png" alt="TR" className="w-6 h-6" /> */}
+                                {/* <img src="/ssl-icon.png" alt="SSL" className="w-6 h-6" /> */}
+                                {/* <img src="/pcv-icon.png" alt="PCV" className="w-6 h-6" /> */}
                             </div>
                         </div>
                     </div>
 
-                    {/* Sosyal Medya ve Mobil Uygulamalar */}
-                    {/*<div className={styles.footerSection}>*/}
-                    {/*    <h3>Bağlantılar</h3>*/}
-                    {/*    <div>*/}
-                    {/*        <div className="flex space-x-4 mb-2">*/}
-                    {/*            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">*/}
-                    {/*                <img src="/facebook-icon.png" alt="Facebook" className="w-6 h-6" />*/}
-                    {/*            </a>*/}
-                    {/*            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">*/}
-                    {/*                <img src="/instagram-icon.png" alt="Instagram" className="w-6 h-6" />*/}
-                    {/*            </a>*/}
-                    {/*            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">*/}
-                    {/*                <img src="/youtube-icon.png" alt="YouTube" className="w-6 h-6" />*/}
-                    {/*            </a>*/}
-                    {/*        </div>*/}
-                    {/*        <div className="flex space-x-2">*/}
-                    {/*            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">*/}
-                    {/*                <img src="/appstore-icon.png" alt="App Store" className="w-20 h-6" />*/}
-                    {/*            </a>*/}
-                    {/*            <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">*/}
-                    {/*                <img src="/googleplay-icon.png" alt="Google Play" className="w-20 h-6" />*/}
-                    {/*            </a>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    {/* Sayfalar */}
+                    <div className={styles.footerSection}>
+                        <h3>Sayfalar</h3>
+                        <ul>
+                            <li>
+                                <Link href="/about" className="hover:text-orange-500">
+                                    Hakkımızda
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/contact" className="hover:text-orange-500">
+                                    İletişim
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/terms/page" className="hover:text-orange-500">
+                                    Kullanım Koşulları
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/privacy/page" className="hover:text-orange-500">
+                                    Gizlilik Politikası
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Alt Bölüm: Telif Hakkı ve Ek Bilgi */}
@@ -96,6 +97,10 @@ export default function Footer() {
                         |{' '}
                         <Link href="/privacy" className="hover:text-orange-500">
                             Gizlilik Politikası
+                        </Link>{' '}
+                        | Developed by{' '}
+                        <Link href="https://www.mehmetgenc.net" className="hover:text-orange-500">
+                            Mehmet Genç
                         </Link>
                     </p>
                 </div>
