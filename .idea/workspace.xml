@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9be8b2df-0aae-4623-9b09-34c572f73708" name="Changes" comment="First Commit">
+    <list default="true" id="9be8b2df-0aae-4623-9b09-34c572f73708" name="Changes" comment="add cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/seller/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/seller/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +69,8 @@
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\addresses" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\terms" />
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\privacy" />
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\public\images" />
     </key>
   </component>
@@ -127,7 +128,7 @@
       <workItem from="1742033647398" duration="2292000" />
       <workItem from="1742056569165" duration="5462000" />
       <workItem from="1742105988045" duration="2926000" />
-      <workItem from="1742296641786" duration="4809000" />
+      <workItem from="1742296641786" duration="12103000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -137,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742059066532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add cart">
+      <option name="closed" value="true" />
+      <created>1742303823471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742303823471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="add cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
