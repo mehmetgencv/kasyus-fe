@@ -5,51 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9be8b2df-0aae-4623-9b09-34c572f73708" name="Changes" comment="First Commit">
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/empty_image_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/kasyus.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/product.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/signup/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/categories/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/categories/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/login/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/AddressForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/AddressItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/EditAddressForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/addresses/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/EditPaymentMethodForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/PaymentMethodForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/PaymentMethodItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/payment-methods/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profile/wishlist-items/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/seller/SellerPortal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/seller/add-product/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/seller/edit/[id]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/seller/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AuthForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/AuthContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/cart/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/cart/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/products/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/products/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/seller/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/seller/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +21,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mehmetgencv&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mehmetgencv/kasyus-fe.git&quot;,
+    &quot;accountId&quot;: &quot;d9a942af-8569-4187-86e2-95b814fecea9&quot;
+  }
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -76,7 +50,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhtgn/Projects/mehmetgencv/kasyus-fe/src/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mhtgn/Projects/mehmetgencv/kasyus-fe/src/app&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,11 +63,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app" />
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\components" />
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\wishlist-items" />
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\payment-methods" />
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\src\app\profile\addresses" />
-      <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\mhtgn\Projects\mehmetgencv\kasyus-fe\public\images" />
@@ -151,8 +125,19 @@
       <workItem from="1741861608633" duration="16838000" />
       <workItem from="1741947332705" duration="2000" />
       <workItem from="1742033647398" duration="2292000" />
-      <workItem from="1742056569165" duration="2479000" />
+      <workItem from="1742056569165" duration="5462000" />
+      <workItem from="1742105988045" duration="2926000" />
+      <workItem from="1742296641786" duration="4809000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1742059066532</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742059066532</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

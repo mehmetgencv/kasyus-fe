@@ -7,8 +7,8 @@ import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useAuth} from "@/contexts/AuthContext";
 
-// Ürün ve görsel tipleri
 export interface ImageDto {
   id: number;
   imageUrl: string;
@@ -35,6 +35,7 @@ interface ResponseWrapper {
 }
 
 export default function HomePage() {
+  const { token } = useAuth();
   const [products, setProducts] = useState<ProductDto[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -68,7 +69,7 @@ export default function HomePage() {
       console.log('API Yanıtı:', data);
       if (data.success && data.data) {
         setProducts(data.data);
-        // Ürünler yüklendiğinde görsel kaynaklarını başlat
+
         const initialImageSources: Record<string, string> = {};
         data.data.forEach((product) => {
           const allImages = [
@@ -91,6 +92,37 @@ export default function HomePage() {
       setLoading(false);
     }
   };
+  const addToCart = async (productId: number, price: number) => {
+    if (!token) {
+      alert('Sepete eklemek için giriş yapmanız gerekiyor.');
+      return;
+    }
+
+    try {
+      const response = await fetch(`${apiUrl}/cart-service/api/v1/carts/add`, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          productId,
+          quantity: 1,
+          price,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Ürün sepete eklenemedi: ${response.status} - ${await response.text()}`);
+      }
+
+      alert('Ürün sepete eklendi!');
+    } catch (error) {
+      console.error('Ürün sepete eklenirken hata:', error);
+      alert('Ürün sepete eklenirken bir hata oluştu');
+    }
+  };
+
 
   useEffect(() => {
     fetchProducts();
@@ -175,12 +207,12 @@ export default function HomePage() {
                         </Slider>
                       </div>
 
-                      <Link
-                          href={`/products/${product.id}`}
+                      <button
+                          onClick={() => addToCart(product.id, product.price)}
                           className="block w-full text-center bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
                       >
                         Sepete Ekle
-                      </Link>
+                      </button>
                     </div>
                 );
               })

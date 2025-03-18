@@ -60,8 +60,9 @@ export default function SellerPortal() {
         try {
             setLoadingProducts(true);
             const url = selectedCategory
-                ? `${apiUrl}/product-service/api/v1/products?categoryId=${selectedCategory}`
+                ? `${apiUrl}/product-service/api/v1/products/category/${selectedCategory}`
                 : `${apiUrl}/product-service/api/v1/products`;
+
             const response = await fetch(url, {
                 headers: {
                     Authorization: `Bearer ${token}`,
@@ -70,7 +71,7 @@ export default function SellerPortal() {
             });
             if (!response.ok) throw new Error('Ürünler yüklenemedi');
             const data = await response.json();
-            // Stock'u sabit 100 olarak ayarla
+
             const updatedProducts = data.data.map((product: Product) => ({
                 ...product,
                 stock: 100,

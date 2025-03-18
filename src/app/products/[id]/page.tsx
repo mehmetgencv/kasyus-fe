@@ -7,6 +7,7 @@ import { FaHeart, FaStar } from 'react-icons/fa';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useAuth} from "@/contexts/AuthContext";
 
 export interface ImageDto {
     id: number;
@@ -37,6 +38,7 @@ interface ApiResponse {
 }
 
 export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+    const { token } = useAuth();
     const resolvedParams = use(params);
     const [product, setProduct] = useState<ProductDto | null>(null);
     const [loading, setLoading] = useState(true);
@@ -84,6 +86,37 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             setError(error instanceof Error ? error.message : 'Bilinmeyen bir hata oluştu');
         } finally {
             setLoading(false);
+        }
+    };
+
+    const addToCart = async (productId: number, price: number) => {
+        if (!token) {
+            alert('Sepete eklemek için giriş yapmanız gerekiyor.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`${apiUrl}/cart-service/api/v1/carts/add`, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId,
+                    quantity: 1,
+                    price,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`Ürün sepete eklenemedi: ${response.status} - ${await response.text()}`);
+            }
+
+            alert('Ürün sepete eklendi!');
+        } catch (error) {
+            console.error('Ürün sepete eklenirken hata:', error);
+            alert('Ürün sepete eklenirken bir hata oluştu');
         }
     };
 
@@ -219,7 +252,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
 
                     {/* Butonlar */}
                     <div className="flex space-x-4">
-                        <button className="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 font-semibold">
+                        <button onClick={() => addToCart(product.id, product.price)} className="flex-1 bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 font-semibold">
                             Sepete Ekle
                         </button>
                         <button className="p-3 border rounded-lg hover:bg-gray-100">

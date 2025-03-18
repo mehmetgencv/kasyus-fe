@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import {useAuth} from "@/contexts/AuthContext";
 
 export interface ImageDto {
     id: number;
@@ -34,6 +34,8 @@ interface ResponseWrapper {
 }
 
 export default function ProductsPage() {
+
+    const { token } = useAuth();
     const [products, setProducts] = useState<ProductDto[]>([]);
     const [loading, setLoading] = useState(true);
     const apiUrl = process.env.NEXT_PUBLIC_API_GATEWAY_URL || 'http://localhost:8072';
@@ -68,6 +70,37 @@ export default function ProductsPage() {
             setProducts([]);
         }
         setLoading(false);
+    };
+
+    const addToCart = async (productId: number, price: number) => {
+        if (!token) {
+            alert('Sepete eklemek için giriş yapmanız gerekiyor.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`${apiUrl}/cart-service/api/v1/carts/add`, {
+                method: 'POST',
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    productId,
+                    quantity: 1,
+                    price,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`Ürün sepete eklenemedi: ${response.status} - ${await response.text()}`);
+            }
+
+            alert('Ürün sepete eklendi!');
+        } catch (error) {
+            console.error('Ürün sepete eklenirken hata:', error);
+            alert('Ürün sepete eklenirken bir hata oluştu');
+        }
     };
 
     useEffect(() => {
@@ -137,12 +170,12 @@ export default function ProductsPage() {
                                 </div>
 
                                 {/* Sepete Ekle Butonu */}
-                                <Link
-                                    href={`/products/${product.id}`}
+                                <button
+                                    onClick={() => addToCart(product.id, product.price)}
                                     className="block w-full text-center bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600"
                                 >
                                     Sepete Ekle
-                                </Link>
+                                </button>
                             </div>
                         );
                     })
