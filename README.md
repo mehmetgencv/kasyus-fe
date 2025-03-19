@@ -13,7 +13,7 @@ Here are some previews of the **Kasyus** e-commerce frontend:
 This is the main landing page where users can browse featured products and categories.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/homepage.png" width="500">
+  <img src="/public/images/app-images/homepage.png" width="500">
 </p>
 
 ---
@@ -23,8 +23,8 @@ On the left, users can manage their **profile details**, such as addresses and p
 On the right, the **shopping cart** allows users to review and manage their selected products.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/profile-details.png" width="400">
-  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/cart.png" width="400">
+  <img src="/public/images/app-images/profile-details.png" width="400">
+  <img src="/public/images/app-images/cart.png" width="400">
 </p>
 
 ---
