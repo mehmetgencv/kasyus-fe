@@ -1,36 +1,193 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kasyus - E-Commerce Frontend
 
-## Getting Started
+![Kasyus Logo](public/images/kasyus.svg)
 
-First, run the development server:
+Welcome to **Kasyus**, a modern e-commerce frontend application built with **Next.js**. This project provides a seamless online shopping experience, including features like product browsing, cart management, and user authentication.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Developed by **Mehmet Genç**, this repository contains the frontend codebase for the Kasyus platform.
+
+## 🚀 GitHub Repositories
+- **Frontend:** [https://github.com/mehmetgencv/kasyus-fe](https://github.com/mehmetgencv/kasyus-fe)
+- **Backend (Spring Boot):** [https://github.com/mehmetgencv/kasyus](https://github.com/mehmetgencv/kasyus)
+
+---
+
+## 📌 Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+---
+
+## ✨ Features
+✅ Responsive product listing and detail pages.  
+✅ Shopping cart functionality with add-to-cart options.  
+✅ User authentication system.  
+✅ Dynamic pages for About, Contact, Terms, and Privacy.  
+✅ Custom 404 error page for better user experience.  
+✅ Modular and reusable components (e.g., Footer, ImageSlider).  
+✅ Integration with an API gateway for product and cart data.
+
+---
+
+## 🛠 Tech Stack
+- **Frontend Framework**: Next.js (App Router)
+- **Backend**: Spring Boot
+- **Styling**: Tailwind CSS
+- **State Management**: React Context API
+- **Dependencies**: React, react-slick, next/image
+- **API**: Custom API Gateway (e.g., `http://localhost:8072`)
+- **Other**: TypeScript for type safety
+
+---
+
+## 🏗 Installation
+### **Prerequisites**
+Ensure you have the following installed:
+- **Node.js** (v18.x or later)
+- **npm** or **yarn**
+- **Git**
+
+### **Steps**
+1. **Clone the frontend repository:**
+   ```sh
+   git clone https://github.com/mehmetgencv/kasyus-fe.git
+   cd kasyus-fe
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Set up environment variables:**
+    - Create a `.env.local` file in the root directory.
+    - Add the following variable (replace with your API URL):
+      ```sh
+      NEXT_PUBLIC_API_GATEWAY_URL=http://localhost:8072
+      ```
+
+4. **Run the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+5. **Open your browser and visit:**
+    - [http://localhost:3000](http://localhost:3000)
+
+---
+
+README dosyana **Docker Compose ile çalıştırma** adımını ekleyelim. Aşağıdaki güncellenmiş README içeriğini kullanabilirsin.
+
+---
+
+## **🏗 Installation & Running with Docker Compose**
+### **Prerequisites**
+Ensure you have the following installed:
+- **Docker** (latest version)
+- **Docker Compose** (included in Docker Desktop)
+- **Git**
+
+### **Steps**
+1. **Clone the frontend repository:**
+   ```sh
+   git clone https://github.com/mehmetgencv/kasyus-fe.git
+   cd kasyus-fe
+   ```
+
+2. **Run the application with Docker Compose:**
+   ```sh
+   docker compose up -d --build
+   ```
+
+3. **Open your browser and visit:**
+   - [http://localhost:3000](http://localhost:3000)
+
+4. **Stopping the container:**
+   ```sh
+   docker compose down
+   ```
+
+---
+
+
+## 🎮 Usage
+- Navigate to `/products` to browse available products.
+- View product details on `/products/[id]`.
+- Access static pages like `/about`, `/contact`, `/terms`, and `/privacy`.
+- Use the cart functionality to add and manage items.
+- A custom 404 page will appear for invalid routes.
+
+---
+
+## 📂 Project Structure
+```
+kasyus-fe/
+  ├── app/                  # Next.js App Router pages
+  │   ├── about/            # About page
+  │   ├── contact/          # Contact page
+  │   ├── terms/            # Terms page
+  │   ├── privacy/          # Privacy page
+  │   ├── not-found.tsx     # Custom 404 page
+  ├── components/           # Reusable components
+  │   ├── Footer.tsx        # Footer component
+  │   ├── ImageSlider.tsx   # Image slider component
+  │   ├── ProductInfo.tsx   # Product info component
+  ├── public/               # Static assets
+  │   ├── images/           # Images (e.g., kasyus.svg, empty_image_2.jpg)
+  ├── types/                # TypeScript type definitions
+  ├── utils/                # Utility functions
+  ├── README.md             # This file
+  ├── next.config.js        # Next.js configuration
+  ├── package.json          # Project dependencies and scripts
+  ├── tsconfig.json         # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Contributing
+Contributions are welcome! To contribute:
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```sh
+   git checkout -b feature/your-feature
+   ```
+3. **Make your changes and commit**:
+   ```sh
+   git commit -m "Add your feature"
+   ```
+4. **Push to the branch**:
+   ```sh
+   git push origin feature/your-feature
+   ```
+5. **Open a Pull Request**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Note:** Please ensure your code adheres to the existing style and includes appropriate tests.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 License
+This project is currently **unlicensed**. For usage permissions, please contact the developer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📩 Contact
+👨‍💻 **Developer**: Mehmet Genç  
+🌐 **Website**: [mehmetgenc.net](https://www.mehmetgenc.net)  
+📂 **GitHub**: [@mehmetgencv](https://github.com/mehmetgencv)
 
-## Deploy on Vercel
+For questions or support, reach out via the [Contact Page](https://www.mehmetgenc.net) or email.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for checking out Kasyus! 🚀 Happy coding! 🎉
+
