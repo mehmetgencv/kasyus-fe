@@ -6,6 +6,28 @@ Welcome to **Kasyus**, a modern e-commerce frontend application built with **Nex
 
 Developed by **Mehmet Genç**, this repository contains the frontend codebase for the Kasyus platform.
 
+## **📸 Screenshots**
+Here are some previews of the **Kasyus** e-commerce frontend:
+
+### 🏠 **Homepage**
+This is the main landing page where users can browse featured products and categories.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/homepage.png" width="500">
+</p>
+
+---
+
+### 👤 **Profile Details & Shopping Cart**
+On the left, users can manage their **profile details**, such as addresses and payment methods.  
+On the right, the **shopping cart** allows users to review and manage their selected products.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/profile-details.png" width="400">
+  <img src="https://raw.githubusercontent.com/mehmetgencv/kasyus-fe/main/public/images/app-images/cart.png" width="400">
+</p>
+
+---
 ## 🚀 GitHub Repositories
 - **Frontend:** [https://github.com/mehmetgencv/kasyus-fe](https://github.com/mehmetgencv/kasyus-fe)
 - **Backend (Spring Boot):** [https://github.com/mehmetgencv/kasyus](https://github.com/mehmetgencv/kasyus)
