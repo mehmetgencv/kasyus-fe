@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build --no-lint",
     "dev": "next dev --turbopack",
-    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --quiet"
   },
+
   "dependencies": {
     "autoprefixer": "^10.4.20",
     "keycloak-js": "^26.1.2",

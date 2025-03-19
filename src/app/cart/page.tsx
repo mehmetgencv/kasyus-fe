@@ -39,7 +39,7 @@ interface ProductResponse {
 }
 
 export default function CartPage() {
-  const { user, token } = useAuth();
+  const {token } = useAuth();
   const [cart, setCart] = useState<CartData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

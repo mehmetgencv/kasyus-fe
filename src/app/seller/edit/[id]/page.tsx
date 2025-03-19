@@ -48,7 +48,7 @@ export default function EditProduct() {
     const [loading, setLoading] = useState(true);
     const router = useRouter();
     const params = useParams();
-    const id = params.id as string;
+    const id = params?.id ? (params.id as string) : null;
 
     useEffect(() => {
         const fetchProduct = async () => {
